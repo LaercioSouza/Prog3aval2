@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1 align = 'center'> Eleições 2022</h1>
+
+    </div>
+
+ 
+    <form align = 'center' class = 'menu'>
+
+    <input type = "submit" class="btn btn-primary" id = "cl" value = "candidatos"onmousedown="sub()"> </input>   
+    <input type = "submit" class="btn btn-primary"id = "c3" value = "Deputados Estaduais" onmousedown="estaduais()"> </input>
+    <input type = "submit" class="btn btn-primary"id = "c2" value = "Deputados Federais" onmousedown="federal()"> 
+    </input>
+     <input type = "submit" class="btn btn-primary"id = "c4" value = "governador" onmousedown="governador()"> </input>
+      <input type = "submit" class="btn btn-primary"id = "c5" value = "senador" onmousedown="senador()"> </input>
+    <input type = "submit" class="btn btn-primary"id = "c6" value = "presidente" onmousedown="presidente()"> </input>
+    <input type = "submit"  class="btn btn-primary" value = "municipio"onmousedown="selectcity()"></input >
+    <input type = "submit"  class="btn btn-primary" value = "resultado geral"onmousedown="result()"></input >
+
+    </form>
+    <br>
+ 
+
+
+       <p align = 'center'> Tabela dos candidatos</p>
+       <table class = 'table'> 
+           <thead class="thead-dark">
+           <tr>
+           <th scope="col">id</th>
+           <th scope="col">cargo</th>
+           <th scope="col">nome</th>
+           <th scope="col">tipo</th>
+           <th scoope="col">status</th>
+        </tr>
+        </thead>
+        <tbody id = "m">
+            <tr> 
+            <th scope="row"></th> 
+        </tr>
+        </tbody>
+
+    </table>
+
+
+        <p align = 'center'> tabela dos deputados estaduais</p>
+         <table class = 'table'> 
+           <thead class="thead-dark">
+           <tr>
+           <th scope="col">id</th>
+           <th scope="col">cargo</th>
+           <th scope="col">nome</th>
+           <th scoope="col">status</th>
+          </tr>
+        </thead>
+        <tbody id = "d">
+            <tr> 
+            <th scope="row"></th> 
+        </tr>
+        </tbody>
+        </table>
+
+
+        <p align = 'center'> Tabela dos deputados federais</p>
+
+         <table class = 'table'> 
+           <thead class="thead-dark">
+           <tr>
+           <th scope="col">id</th>
+           <th scope="col">cargo</th>
+           <th scope="col">nome</th>
+           <th scoope="col">status</th>
+          </tr>
+        </thead>
+        <tbody id = "dep">
+            <tr> 
+            <th scope="row"></th> 
+            </tr>
+        </tbody>
+    </table>
+
+
+     
+        <p align = 'center'> tabela dos governadores</p>
+         <table class = 'table'> 
+           <thead class="thead-dark">
+           <tr>
+           <th scope="col">id</th>
+           <th scope="col">cargo</th>
+           <th scope="col">nome</th>
+           <th scoope="col">status</th>
+          </tr>
+        </thead>
+        <tbody id = "g">
+            <tr> 
+            <th scope="row"></th> 
+        </tr>
+        </tbody>
+    </table>
+
+
+        <p align = 'center'> tabela dos senadores</p>
+         <table class = 'table'> 
+           <thead class="thead-dark">
+           <tr>
+           <th scope="col">id</th>
+           <th scope="col">cargo</th>
+           <th scope="col">nome</th>
+           <th scoope="col">status</th>
+          </tr>
+        </thead>
+        <tbody id = "sin">
+            <tr> 
+            <th scope="row"></th> 
+        </tr>
+        </tbody>
+
+    
+
+     </table>
+        <p align = 'center'> tabela dos presidentes</p>
+         <table class = 'table'> 
+           <thead class="thead-dark">
+           <tr>
+           <th scope="col">id</th>
+           <th scope="col">cargo</th>
+           <th scope="col">nome</th>
+           <th scoope="col">status</th>
+          </tr>
+        </thead>
+        <tbody id = "pres">
+            <tr> 
+            <th scope="row"></th> 
+        </tr>
+        </tbody>
+
+    </table>
+
+
+    <p align = 'center'>lista de municipios</p>
+
+    <table class = 'table'> 
+           <thead class="thead-dark">
+           <tr>
+           <th scope="col">id</th>
+           <th scope="col">nome</th>
+           <th scope="col">uespi</th>
+           
+          </tr>
+        </thead>
+        <tbody id = "municipios">
+            <tr> 
+            <th scope="row"></th> 
+        </tr>
+        </tbody>
+
+    </table>
+
+
+       <table class = 'table'> 
+           <thead class="thead-dark">
+           <tr>
+           <th scope="col">nome</th>
+           <th scope="col">cargo</th>
+           <th scope="col">situação</th>
+           
+          </tr>
+        </thead>
+        <tbody id = "final">
+            <tr> 
+            <th scope="row"></th> 
+        </tr>
+        </tbody>
+
+    </table>
+
+
+    <p align = 'center'> Laercio Souza da Silva</p>
+
+
+
+
+    
+    
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src= "master.js"></script>
+
+</html>
